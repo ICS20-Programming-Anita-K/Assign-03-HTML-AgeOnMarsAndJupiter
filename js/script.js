@@ -13,6 +13,6 @@ function calculate () {
   // calculate the age on Mars and Venus
   let mars = age / 1.88;
   let venus = age / 0.615;
-  //display the age on Mars
+  //display the age on Mars and Venus
   document.getElementById('answers').innerHTML = name + " is " + mars.toFixed(0) + " years old on Mars, and " + venus.toFixed(0) + " years old on Venus.";
 }

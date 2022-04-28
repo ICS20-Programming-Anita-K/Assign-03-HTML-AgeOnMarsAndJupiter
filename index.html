@@ -40,7 +40,7 @@
         <input type="text" id="name" placeholder="Name"><br><br>
         <!-- Age field -->
         <label for="age">Age (years)</label>
-        <input type="number" id="age" placeholder="Age"><br><br>
+        <input type="number" step="1" min="0" id="age" placeholder="Age"><br><br>
         </form>
       <button onclick="calculate()" class="button">Calculate Ages on Mars and Venus</button>
     <div id="output">
@@ -48,11 +48,117 @@
       <div id="answers"></div>
     </div>
     <br></br>
+    <center><h3>Put your age on Mars and Venus here:</h3></center>
+    <!-- Table for age on Mars-->
+    <center><table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+    <thead>
+       <tr>
+        <th class="mdl-data-table__cell--non-numeric">Age on Mars</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Child (0-12)</td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Teenager (13-19)</td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Adult (20-39)</td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Middle Age Adult (40-59)</td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Senior Adult (60+)</td>
+      </tr>
+    </tbody>
+    </table>
+        </form>
+      <br>
+    <!-- Table for age on Venus-->
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+      <thead>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric">Age on Venus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Child (0-12)</td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Teenager (13-19)</td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Adult (20-39)</td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Middle Age Adult (40-59)</td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Senior Adult (60+)</td>
+        </tr>
+      </tbody>
+    </table>
+    </form></center>
     <!-- Information about subject -->
     <center><h3>Why is our age different on other planets?</h3>
     <p>Though we don't typically think about it this way, our age is really the number of times the Earth has orbited the Sun since we were born. Since each planet takes a different amount of time to orbit the sun, and therefore a different year length. So, if we were to live on another planet, such as Mars or Venus, our age would be different.</p></center>
     <center><h3>Watch this video to see the planets in our Solar System orbiting the Sun ↓</h3></center>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/z8aBZZnv6y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br></br>
+    <center><h3>Here is a list in order of the planet where you will be the oldest to the planet where you will be the youngest</h3></center>
+    <!-- Simple list -->
+    <style>
+    .demo-list-item {
+      width: 300px;
+    }
+    </style>
+
+    <ul class="demo-list-item mdl-list">
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+          Mercury
+        </span>
+      </li>
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+          Venus
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Earth
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Mars
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Jupiter
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Saturn
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Uranus
+        </span>
+      </li>
+      <li class="mdl-list__item">
+         <span class="mdl-list__item-primary-content">
+          Neptune
+        </span>
+      </li>
+    </ul>
+    <center><img src="./images/venusmars.jpeg"></center>
+    <br><br>
   </body>
 </html>
